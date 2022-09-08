@@ -303,6 +303,11 @@ img{
     border-radius: .5rem;
     justify-self: center;
 }
+.about__img1{
+    width: 40%;
+    border-radius: .5rem;
+    justify-self: center;
+}
 
 /* SERVICES */
 
