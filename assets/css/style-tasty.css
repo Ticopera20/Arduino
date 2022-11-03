@@ -396,8 +396,8 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: masonry;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .info__2{
@@ -413,10 +413,13 @@ img{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -19.3px;
 }
 
 .img__cod{
-    width: 700px;;
+    width: 900px;
+    display: block;
+    margin: 10px 0px;
 }
 
 /* Avnaces */
@@ -595,4 +598,97 @@ img{
         height: calc(100vh - var(--header-height));
         align-content: center;
     }
+}
+
+
+/* Slider */
+.container__slider{
+    margin: auto;
+    /* background-color: white; */
+    width: 1000px;
+    padding: 30px 10px;
+    
+  }
+
+.slider__a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu__slider{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu__slider li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu__slider li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+    text-align: center;
+  }
+
+.about__img__proyecto{
+    width: 90%;
+    height: 60%;
+    border-radius: 5%;
+}
+
+.container__integrante__img{
+    background-color: white;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.img__integrante{
+    width: 100%;
+    height: 100%;
 }
